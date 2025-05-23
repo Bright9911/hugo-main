@@ -21,13 +21,19 @@ image = "the-creative-exchange-d2zvqp3fpro-unsplash.jpg"
 ### 1、Git下载
 
 - 前往[Git](https://git-scm.com/)官网，下载安装程序
-
 - 一直点下一步，默认安装即可
+
+<img src="1.png" alt="image-20250523164313875" style="zoom:80%;" />
 
 ### 2、Hugo下载
 
 - 前往[Tags · gohugoio/hugo](https://github.com/gohugoio/hugo/tags)下载对应版本
+
+<img src="2.png" alt="hugo版本" style="zoom:80%;" />
+
 - Windows版本：**hugo_extended_xxxxx_windows_amd64.zip**
+
+<img src="3.png" alt="hugo版本" style="zoom:80%;" />
 
 ## 二、搭建博客
 
@@ -90,13 +96,19 @@ git push    // 如果是团队协作，需要先新建分支，再上传合并
 
 - （5）上传成功后访问 **https://{github用户名}.github.io**，成功搭建属于自己的Hugo博客
 
+<img src="4.png" alt="hugo版本" style="zoom:80%;" />
+
 ### 2、Github Action自动部署
 
 - （1）Github创建一个新的仓库，用于存放Hugo的主文件
 - （2）前往`Setttings -> Developer Settings -> Personal access tokens`，创建一个token(classic)
-- （3）token选择永不过期，并勾选 **repo** 和 **workflow** 选项
 
+<img src="5.png" alt="hugo版本" style="zoom:80%;" />
+
+- （3）token选择永不过期，并勾选 **repo** 和 **workflow** 选项
 - （4）为保证安全，将生成的token，保存的仓库的变量中，前往`Settings -> Secrets and variables -> Actions`中设置
+
+<img src="6.png" alt="hugo版本" style="zoom:80%;" />
 
 - （5）在hugo主文件创建一个`.github/workflows/hugo_deploy.yaml`文件，将以下内容复制进去，想具体了解更多，可查看【[Github Action文档](https://docs.github.com/zh/actions)】
 
@@ -158,5 +170,13 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin {你的github仓库地址}
 git push -u origin main
+```
+
+- （8）之后修改页面只需要执行以下步骤即可
+
+```
+git add .
+git commit -m "修改描述"
+git push
 ```
 

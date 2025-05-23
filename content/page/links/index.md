@@ -35,3 +35,7 @@ links:
 ```
 
 `image` field accepts both local and external images.
+
+友情链接
+
+https://letere-gzj.github.io/hugo-stack/

@@ -52,12 +52,14 @@ image = "the-creative-exchange-d2zvqp3fpro-unsplash.jpg"
 ### 2、配置主题
 
 - （1）前往【[Hugo Themes](https://themes.gohugo.io/)】，查找自己喜欢的主题，进行下载
+- （2）这边以【[Stack主题](https://github.com/CaiJimmy/hugo-theme-stack/tags)】为例，将下载好的主题解压，放到`/themes`文件夹中（这里我的网站名称是dev，从上一步创建博客的第2步中的xxx得来）
 
-- （2）这边以【[Stack主题](https://github.com/CaiJimmy/hugo-theme-stack/tags)】为例，将下载好的主题解压，放到`/themes`文件夹中
+<img src="7.png" alt="hugo版本" style="zoom:80%;" />
 
 - （3）将`exampleSite`样例数据中的 **Content** 和 **hugo.yaml** 复制到主文件夹中，并删掉`hugo.toml`和`content/post/rich-content`
-
 - （4）修改 **hugo.yaml** 中的 **theme**，将他修改为跟主题文件夹同名
+
+<img src="8.png" alt="hugo版本" style="zoom:80%;" />
 
 - （5）再次启动hugo服务，查看主题，具体主题配置修改 **hugo.yaml**，这里不细说，感兴趣可自行查找相关文章
 

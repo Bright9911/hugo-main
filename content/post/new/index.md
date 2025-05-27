@@ -63,7 +63,7 @@ image = "the-creative-exchange-d2zvqp3fpro-unsplash.jpg"
 - （1）使用以下命令生成文章（文章名无所谓，可以修改）
 
 ```bash
-hugo.exe new content post/{文章名}/index.md
+hugo new content post/{文章名}/index.md
 ```
 
 - （2）生成文章之后，在`content/post/{文章名字}/index.md`中编写文章

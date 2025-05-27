@@ -108,6 +108,7 @@
     initScrollTop();
 </script>
 
+
 <!-- 代码块折叠 -->
 <style>
     .highlight {
@@ -190,3 +191,16 @@
   
   initCodeMoreBox();
 </script>
+
+
+<!-- 背景图片 -->
+<!-- <style>
+  body {
+    background: url({{ (resources.Get "background/6b951400bb98fd5fcd57d2c9599df286.jpg").Permalink }}) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>  -->
+
+<!-- 动态背景 -->
+<script src={{ (resources.Get "background/sakura.js").Permalink }}></script>

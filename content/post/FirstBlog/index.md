@@ -2,10 +2,6 @@
 title = 'Redis的使用'
 date = 2025-05-23T10:23:18+08:00
 draft = true
-tags = [
-    "markdown",
-    "redis",
-]
 categories = [
     "redis",
     "笔记",
@@ -14,11 +10,11 @@ image = "pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
 
 +++
 
-## 下载并解压
+## 1、下载并解压
 
 https://github.com/tporadowski/redis/releases
 
-## 启动Redis服务器
+## 2、启动Redis服务器
 
 ```
 .\redis-server.exe redis.windows.conf
@@ -26,7 +22,7 @@ https://github.com/tporadowski/redis/releases
 
 默认端口为 6379，如果看到类似 Ready to accept connections 的消息，说明 Redis 服务已成功启动。
 
-## 测试Redis
+## 3、测试Redis
 
 ```
 .\redis-cli.exe -h 127.0.0.1 -p 6379
@@ -34,7 +30,7 @@ https://github.com/tporadowski/redis/releases
 
 执行 ping 命令，如果返回 PONG，说明 Redis 服务正常运行。
 
-## 将 Redis 注册为 Windows 服务（可选）（没做）
+## 4、将 Redis 注册为 Windows 服务（可选）（没做）
 
 在 Redis 安装目录中，运行以下命令将 Redis 注册为 Windows 服务：
 
@@ -52,7 +48,7 @@ redis-server.exe --service-start --service-name redisserver1
 
 
 
-## 报错解决
+## 5、报错解决
 
 当出现以下问题时：
 

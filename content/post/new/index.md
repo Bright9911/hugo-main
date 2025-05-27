@@ -2,11 +2,6 @@
 title = 'Hugo+Github搭建个人博客'
 date = 2025-05-23T14:53:41+08:00
 draft = true
-tags = [
-    "markdown",
-    "hugo",
-    "github",
-]
 categories = [
     "hugo",
     "github",
@@ -16,16 +11,16 @@ image = "the-creative-exchange-d2zvqp3fpro-unsplash.jpg"
 
 +++
 
-## 一、环境准备
+## 1、环境准备
 
-### 1、Git下载
+### 1.1、Git下载
 
 - 前往[Git](https://git-scm.com/)官网，下载安装程序
 - 一直点下一步，默认安装即可
 
 <img src="1.png" alt="image-20250523164313875" style="zoom:80%;" />
 
-### 2、Hugo下载
+### 1.2、Hugo下载
 
 - 前往[Tags · gohugoio/hugo](https://github.com/gohugoio/hugo/tags)下载对应版本
 
@@ -35,9 +30,9 @@ image = "the-creative-exchange-d2zvqp3fpro-unsplash.jpg"
 
 <img src="3.png" alt="hugo版本" style="zoom:80%;" />
 
-## 二、搭建博客
+## 2、搭建博客
 
-### 1、创建博客
+### 2.1、创建博客
 
 - （1）在**hugo.exe**所在文件夹的地址栏敲打cmd，然后Enter唤起命令行
 
@@ -49,7 +44,7 @@ image = "the-creative-exchange-d2zvqp3fpro-unsplash.jpg"
 
    **（hugo默认是没有主题的，需要进行主题配置）**
 
-### 2、配置主题
+### 2.2、配置主题
 
 - （1）前往【[Hugo Themes](https://themes.gohugo.io/)】，查找自己喜欢的主题，进行下载
 - （2）这边以【[Stack主题](https://github.com/CaiJimmy/hugo-theme-stack/tags)】为例，将下载好的主题解压，放到`/themes`文件夹中（这里我的网站名称是dev，从上一步创建博客的第2步中的xxx得来）
@@ -63,9 +58,39 @@ image = "the-creative-exchange-d2zvqp3fpro-unsplash.jpg"
 
 - （5）再次启动hugo服务，查看主题，具体主题配置修改 **hugo.yaml**，这里不细说，感兴趣可自行查找相关文章
 
-## 三、Github部署
+### 2.3、发布文章
 
-### 1、常规部署
+- （1）使用以下命令生成文章（文章名无所谓，可以修改）
+
+```bash
+hugo.exe new content post/{文章名}/index.md
+```
+
+- （2）生成文章之后，在`content/post/{文章名字}/index.md`中编写文章
+
+- （3）文章开头配置（自行修改）
+
+```markdown
+title = '{文章名}'
+date = 2025-05-23T14:53:41+08:00
+draft = true
+categories = [
+    "hugo",
+    "github",
+    "笔记",
+]
+image = "the-creative-exchange-d2zvqp3fpro-unsplash.jpg"
+```
+
+- （4）图片引入格式如下
+
+```markdown
+<img src="4.png" alt="hugo版本" style="zoom:80%;" />
+```
+
+## 3、Github部署
+
+### 3.1、常规部署
 
 - （1）前往【[Github官网](https://github.com/)】，创建仓库 **{github用户名}.github.io**
 
@@ -100,7 +125,7 @@ git push    // 如果是团队协作，需要先新建分支，再上传合并
 
 <img src="4.png" alt="hugo版本" style="zoom:80%;" />
 
-### 2、Github Action自动部署
+### 3.2、Github Action自动部署
 
 - （1）Github创建一个新的仓库，用于存放Hugo的主文件
 - （2）前往`Setttings -> Developer Settings -> Personal access tokens`，创建一个token(classic)

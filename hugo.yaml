@@ -21,14 +21,6 @@ languages:
         params:
             sidebar:
                 subtitle: 君子不器
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 2
-        params:
-            sidebar:
-                subtitle: وصف تجريبي
 
 services:
     # Change it to your Disqus shortname before using
@@ -169,9 +161,9 @@ params:
             - type: categories
               params:
                   limit: 10
-            - type: tag-cloud
-              params:
-                  limit: 10
+            # - type: tag-cloud
+            #   params:
+            #       limit: 10
         page:
             - type: toc
 
@@ -251,7 +243,7 @@ markup:
             unsafe: true
     tableOfContents:
         endLevel: 4
-        ordered: true
+        ordered: false
         startLevel: 2
     highlight:
         noClasses: false

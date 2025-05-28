@@ -1,6 +1,6 @@
 +++
 
-title = 'Stack主题自定义修改'
+title = '【Hugo】Stack主题自定义修改'
 date = 2025-05-27T11:20:48+08:00
 draft = true
 categories = [

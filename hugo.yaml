@@ -1,7 +1,7 @@
 baseurl: https://Bright9911.github.io
 languageCode: en-us
 theme: hugo-theme-stack
-pagerSize: 3
+pagerSize: 5
 title: Bright9911
 copyright: Bright9911
 
@@ -31,7 +31,7 @@ services:
         id:
 
 pagination:
-    pagerSize: 3
+    pagerSize: 5
 
 permalinks:
     post: /p/:slug/

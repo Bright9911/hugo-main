@@ -55,6 +55,13 @@
             </div>
         {{- end -}}
 
+        <!-- 浏览量统计 -->
+        <div id="viewCount">
+            {{ partial "helper/icon" "eye" }}
+            <time class="article-time--reading">
+                <span id="vercount_value_page_pv">loading... </span>次
+            </time>
+        </div>
     </footer>
     {{ end }}
 

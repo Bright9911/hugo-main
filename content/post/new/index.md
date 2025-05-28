@@ -1,5 +1,5 @@
 +++
-title = 'Hugo+Github搭建个人博客'
+title = '【Hugo】Hugo+Github搭建个人博客'
 date = 2025-05-23T14:53:41+08:00
 draft = true
 categories = [

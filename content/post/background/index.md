@@ -1,5 +1,5 @@
 +++
-title = '修改博客背景并引入动态背景'
+title = '【Hugo】修改博客背景并引入动态背景'
 date = 2025-05-27T15:07:38+08:00
 draft = true
 categories = [

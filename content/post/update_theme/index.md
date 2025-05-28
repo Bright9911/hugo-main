@@ -381,6 +381,33 @@ jobs:
 > 这是markdown的引用块语法
 ```
 
+```markdown
+// markdown写法如下：
+<blockquote class="alert-note">
+alert-note
+</blockquote>
+```
+
+
+
+<blockquote class="alert-note">
+alert-note
+</blockquote>
+
+<blockquote class="alert-tip">
+alert-tip
+</blockquote>
+
+<blockquote class="alert-warn">
+alert-warn
+</blockquote>
+
+<blockquote class="alert-error">
+alert-error
+</blockquote>
+
+
+
 ## 9、代码块过长折叠&展开
 
 - 代码块折叠的样式风格完全仿照[**CSDN**](https://blog.csdn.net/)来实现的

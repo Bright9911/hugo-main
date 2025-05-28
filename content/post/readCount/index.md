@@ -10,12 +10,21 @@ image = "2077.jpg"
 
 +++
 
+<blockquote class="alert-note">
+
 **前言：**
 
 - 博客文章统计组件个人找到了两个，分别是[**不蒜子**](https://busuanzi.ibruce.info/)，以及[**vercount**](https://cn.vercount.one/)
+
 - **不蒜子**比较老，但很稳定，到现在仍然可以使用，没有停服
+
 - **vercount**则比较新，并做了一些代码优化
+
 - 两种使用都基本一样，差别不大，看自己喜好，下面的教程是以**vercount**来举例，用不蒜子的话，就把对应的脚本和元素标签替换一下就好
+
+  </blockquote>
+
+
 
 ## 1、基本引入
 

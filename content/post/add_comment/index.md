@@ -43,17 +43,11 @@ image = "1606179652749.jpeg"
 
 2. 填写以下信息：
 
-   - **Repository** ：`Bright9911/blog-comments`
-   - **Repository id** ：在 Giscus 配置页面自动生成或从仓库 URL 中获取。
-   - **Category** ：选择 “Discussions”。
-   - **Category id** ：在 Giscus 配置页面自动生成。
-   - **Mapping** ：选择 `pathname`。
-   - **Reactions enabled** ：启用（填写数字 `1`）。
-   - **Metadata** ：禁用（填写数字 `0`）。
-   - **Theme** ：选择 `light` 或 `dark`。
-   - **Language** ：选择 `zh-CN`。
+   仓库名字：`Bright9911/blog-comments`
 
-3. 页面会生成一段代码，类似如下：
+   Discussion 分类：**Genenal** 或 **announcements**
+
+3. 然后页面会生成一段代码，类似如下：
 
    ```html
    <script

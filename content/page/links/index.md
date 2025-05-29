@@ -30,6 +30,15 @@ links:
     description: 本博客使用的动态背景组件     
     website: https://github.com/VincentGarreau/particles.js
     image: particles-logo.png
+  - title: vercount
+    description: 文章浏览数统计，不蒜子计数器完美替代方案
+    website: https://github.com/EvanNotFound/vercount
+    image: vercount-logo.png
+  - title: Giscus
+    description: Giscus 是一个基于 GitHub Discussions 的评论系统，用于替代传统评论插件
+    website: https://giscus.app/zh-CN
+    image: 106117.png
+
 menu:
     main: 
         weight: -50

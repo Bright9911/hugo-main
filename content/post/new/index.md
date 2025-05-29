@@ -74,6 +74,7 @@ hugo new content post/{文章名}/index.md
 title = '{文章名}'
 date = 2025-05-23T14:53:41+08:00
 draft = true
+comments= false
 categories = [
     "hugo",
     "github",

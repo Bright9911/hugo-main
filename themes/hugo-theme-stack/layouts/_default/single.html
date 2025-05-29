@@ -33,7 +33,10 @@
     {{ partial "article/components/related-content" . }}
      
     {{ if not (eq .Params.comments false) }}
-        {{ partial "comments/include" . }}
+        <!-- 添加 Giscus 评论组件的代码 -->
+        <div class="comments">
+            {{ partial "giscus.html" . }}
+        </div>
     {{ end }}
 
     {{ partialCached "footer/footer" . }}

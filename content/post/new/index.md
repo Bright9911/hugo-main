@@ -73,6 +73,7 @@ hugo new content post/{文章名}/index.md
 ```markdown
 title = '{文章名}'
 date = 2025-05-23T14:53:41+08:00
+description: 这是一个副标题
 draft = true
 comments= false
 categories = [
@@ -191,7 +192,7 @@ hugo.exe
 
 - （7）将hugo的主文件上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面
 
-```
+```bash
 git init
 git add .
 git commit -m "first commit"
@@ -202,7 +203,7 @@ git push -u origin main
 
 - （8）之后修改页面只需要执行以下步骤即可
 
-```
+```bash
 git add .
 git commit -m "修改描述"
 git push

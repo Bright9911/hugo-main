@@ -55,6 +55,16 @@
             </div>
         {{- end -}}
 
+        <!-- 字数统计 -->
+        {{ if .WordCount }}
+            <footer class="article-wordcount">
+                <div>  
+                    {{ partial "helper/icon" "wordCount" }}
+                    <span class="article-wordcount--count" style="margin-left: 13px;margin-top: 5px;">{{ T "article.wordCount" .WordCount }}</span>
+                </div>
+            </footer>
+        {{ end }}
+
         <!-- 浏览量统计 -->
         <div id="viewCount">
             {{ partial "helper/icon" "eye" }}

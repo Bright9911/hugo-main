@@ -75,3 +75,231 @@
   }
 
 }
+
+/*---------------全局设置-------------*/
+:root {
+  --card-border-radius: 20px; //小卡片圆角
+  --article-font-size: 1.7rem; // 全局字体大小
+  //--card-background: #ffffff;//小卡片背景颜色
+  //--body-text-color: rgba(171, 169, 169, 0.58);//字体颜色
+
+
+}
+
+
+/*选中文字颜色*/
+::selection {
+  color: #fff;
+  background: #557697;
+}
+
+
+/*滚动条样式*/
+html {
+  ::-webkit-scrollbar {
+    width: 18px;
+    //display: none; //隐藏滚动条
+  }
+
+  ::-webkit-scrollbar-track {
+    //background-color: #fff; //滚动条背景颜色
+  }
+
+  ::-webkit-scrollbar-thumb {
+    //鼠标移动上去前的滚动条颜色
+    background-color: rgba(111, 114, 115, 0.65); 
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    //鼠标移动上去时的滚动条颜色
+    background-color: #232525; 
+  }
+}
+
+//首页欢迎板块样式
+.welcome {
+  color: var(--card-text-color-main);
+  background: var(--card-background);
+  box-shadow: var(--shadow-l2);
+  border-radius: 30px;
+  display: inline-block;
+}
+
+// 👋emoji实现摆动效果
+.shake {
+  display: inline-block;
+  animation: shake 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: shake;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  animation-delay: 2s;
+  @keyframes shake {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(45deg) scale(1.2);
+    }
+    50% {
+      transform: rotate(0) scale(1.2);
+    }
+    75% {
+      transform: rotate(45deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+}
+// 实现字符跳动动画
+.jump-text1 {
+  display: inline-block;
+  animation: jump 0.5s 1;
+}
+
+.jump-text2 {
+  display: inline-block;
+  animation: jump 0.5s 1;
+  animation-delay: 0.1s;
+}
+
+.jump-text3 {
+  display: inline-block;
+  animation: jump 0.5s 1;
+  animation-delay: 0.2s;
+}
+
+.jump-text4 {
+  display: inline-block;
+  animation: jump 0.5s 1;
+  animation-delay: 0.3s;
+}
+
+.jump-text5 {
+  display: inline-block;
+  animation: jump 0.5s 1;
+  animation-delay: 0.4s;
+}
+
+.jump-text6 {
+  display: inline-block;
+  animation: jump 0.5s 1;
+  animation-delay: 0.5s;
+}
+
+.jump-text7 {
+  display: inline-block;
+  animation: jump 0.5s 1;
+  animation-delay: 0.6s;
+}
+
+.jump-text8 {
+  display: inline-block;
+  animation: jump 0.5s 1;
+  animation-delay: 0.7s;
+}
+
+.jump-text9 {
+  display: inline-block;
+  animation: jump 0.5s 1;
+  animation-delay: 0.9s;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*头像旋转动画*/
+.sidebar header .site-avatar .site-logo {
+  transition: transform 1.65s ease-in-out; //旋转时间
+
+}
+
+.sidebar header .site-avatar .site-logo:hover {
+  transform: rotate(360deg); //旋转角度为360度
+}
+
+// 阅读时间、字数样式
+.article-time {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.article-time div {
+  margin-right: 10px;
+}
+
+.article-time--count {
+  font-size: 13px;
+  color: #666;
+}
+
+.running-time {
+    color: var(--card-text-color-secondary);
+    font-weight: normal;
+
+    .running-days {
+        font-weight:bold;
+        color: #9e8f9f;
+    }   
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+
+    &.extended {
+        /* range: 768-1024 */
+        @include respond(md) {
+            max-width: 95%;
+            --left-sidebar-max-width: 25%;
+            --right-sidebar-max-width: 30%;
+        }
+
+        /* range: 1024-1280 */
+        @include respond(lg) {
+            max-width: 95%;
+            --left-sidebar-max-width: 25%;
+            --right-sidebar-max-width: 22%;
+        }
+    }
+
+    &.compact {
+        @include respond(md) {
+            --left-sidebar-max-width: 25%;
+            max-width: 768px;
+        }
+
+        @include respond(lg) {
+            max-width: 1024px;
+            --left-sidebar-max-width: 20%;
+        }
+
+        @include respond(xl) {
+            max-width: 1280px;
+        }
+    }
+}
+

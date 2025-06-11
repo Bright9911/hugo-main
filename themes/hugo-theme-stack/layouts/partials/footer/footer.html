@@ -13,11 +13,34 @@
             {{ . | safeHTML }} <br/>
         {{ end }}
 
-        {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
+        <!-- {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
         {{- $Theme := printf `<b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="%s">Stack</a></b>` $ThemeVersion -}}
         {{- $DesignedBy := `<a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>` -}}
 
         {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
-        {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
+        {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }} -->
+
+        {{ $articleCount := sub (len .Site.RegularPages) 4 }}
+        {{ $totalWordCount := 0 }}
+        {{ range .Site.Pages }}
+        {{ $totalWordCount = add $totalWordCount .WordCount }}
+        {{ end }}
+        {{ $totalWordCountInK := div $totalWordCount 100.0 }}
+        {{ $totalWordCountInKCeiling := math.Ceil $totalWordCountInK }}
+        {{ $totalWordCountInKFloat := div $totalWordCountInKCeiling 10.0 | printf "%.1f"}}
+        
+        <!-- Add blog running time -->
+        <section class="running-time" style="font-size: 13px;">
+            本博客已稳定运行
+            <span id="runningdays" class="running-days"></span>
+        </section>
+
+        <p style="font-size: 13px;margin: 0px;">发布了 {{ $articleCount }} 篇文章 | 共 {{ $totalWordCountInKFloat }}K 字</p>
+
+
+        <section class="powerby" style="font-size: 13px;">
+            <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> <a>由Jimmy设计</a>
+        </section>
+
     </section>
 </footer>

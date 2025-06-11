@@ -273,14 +273,14 @@ html {
     &.extended {
         /* range: 768-1024 */
         @include respond(md) {
-            max-width: 98%;
+            max-width: 97%;
             --left-sidebar-max-width: 25%;
             --right-sidebar-max-width: 30%;
         }
 
         /* range: 1024-1280 */
         @include respond(lg) {
-            max-width: 98%;
+            max-width: 97%;
             --left-sidebar-max-width: 25%;
             --right-sidebar-max-width: 22%;
         }

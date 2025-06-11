@@ -499,3 +499,25 @@ alert-error
 </script>
 ```
 
+
+
+## 更多参考
+
+<blockquote class="alert-tip">
+
+
+
+[Hugo博客 | stack主题修改第一站](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[   ](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[（](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[修改样式](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[）](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)
+
+[hugo+Stack 搭建个人博客](https://hyrtee.github.io/2023/start-blog/)[   ](https://hyrtee.github.io/2023/start-blog/)[（](https://hyrtee.github.io/2023/start-blog/)[让百度、谷歌搜索](https://hyrtee.github.io/2023/start-blog/)[到你](https://hyrtee.github.io/2023/start-blog/)[）](https://hyrtee.github.io/2023/start-blog/)
+
+[使用 Hugo 对博客的重建与 Stack 主题优化记录](https://oxidane-uni.github.io/p/使用-hugo-对博客的重建与-stack-主题优化记录/)[   ](https://oxidane-uni.github.io/p/使用-hugo-对博客的重建与-stack-主题优化记录/)[（](https://oxidane-uni.github.io/p/使用-hugo-对博客的重建与-stack-主题优化记录/)[优化布局](https://oxidane-uni.github.io/p/使用-hugo-对博客的重建与-stack-主题优化记录/)[）](https://oxidane-uni.github.io/p/使用-hugo-对博客的重建与-stack-主题优化记录/)
+
+[Hugo Stack 主题美化](https://weiqifun.com/posts/2024/10/hugo+stack主题美化/)[   ](https://weiqifun.com/posts/2024/10/hugo+stack主题美化/)[（](https://weiqifun.com/posts/2024/10/hugo+stack主题美化/)[文章统计字数](https://weiqifun.com/posts/2024/10/hugo+stack主题美化/)[）](https://weiqifun.com/posts/2024/10/hugo+stack主题美化/)
+
+[小白hugo博客装修笔记（1）](https://www.blain.top/p/renovation/)[（](https://www.blain.top/p/renovation/)[运行时长、文字统计](https://www.blain.top/p/renovation/)[）](https://www.blain.top/p/renovation/)
+
+[剑夜の个人空间](https://jianyesc.com/)
+
+
+</blockquote>

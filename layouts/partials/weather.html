@@ -1,0 +1,60 @@
+<!-- <style>
+    .locationInfo {
+        margin: 30px 0px 20px 0px;
+    }
+    .weatherReport {
+        font-size: 15px;
+        color: #1f373c8c;
+    }
+</style>
+<h4 class="locationInfo" id="locationInfo"></h5>
+<span class="weatherReport" id="weatherReport"></span>
+
+<script>
+    const apicityUrl = 'https://restapi.amap.com/v3/ip?key=43b1a3e515fcd90eb7efe26feebb6436';
+    const apiUrlTemplate = 'https://restapi.amap.com/v3/weather/weatherInfo?city={adcode}&key=43b1a3e515fcd90eb7efe26feebb6436&extensions=all';
+
+    fetch(apicityUrl)
+        .then(response => response.json())
+        .then(data => {
+            const province = data.province;
+            const city = data.city;
+            const adcode = data.adcode;
+
+            // 显示省份和城市信息
+            document.getElementById('locationInfo').innerHTML = `当前城市 | ${province} ${city}`;
+
+            // 将 adcode 插入到 apiUrl 中
+            const apiUrl = apiUrlTemplate.replace('{adcode}', adcode);
+
+            // 使用新的 apiUrl 获取天气信息
+            return fetch(apiUrl);
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === "1" && data.count === "1") {
+                const forecast = data.forecasts[0];
+                const reportTime = forecast.reporttime;
+                const city = forecast.city;
+                const province = forecast.province;
+
+                // 只显示第一条天气数据
+                const cast = forecast.casts[0]; 
+                const date = cast.date;
+                const parts = date.split("-");
+                const newDate = parts.slice(1).join("-");
+                const nightWeather = cast.nightweather;
+                const dayWeather = cast.dayweather;
+                const daytemp = cast.daytemp;
+                const nighttemp = cast.nighttemp;
+
+                const weatherReport = 
+                    `${newDate}<br>日夜温度: ${daytemp} ~ ${nighttemp}℃<br>日夜天气: ${nightWeather} ~ ${dayWeather}<br>`;
+
+                document.getElementById('weatherReport').innerHTML = weatherReport;
+            } else {
+                console.error('Error fetching weather data');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+</script> -->

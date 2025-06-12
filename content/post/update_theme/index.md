@@ -5,6 +5,7 @@ date = 2025-05-27T11:20:48+08:00
 draft = true
 categories = [
     "stack",
+	"hugo",
     "笔记",
 ]
 image = "helena-hertz-wWZzXlDpMog-unsplash.jpg"
@@ -506,6 +507,7 @@ alert-error
 <blockquote class="alert-tip">
 
 
+[Hugo：添加天气预报 | Blog](https://huuuuuuo.github.io/post/hugo添加天气预报/)   
 
 [Hugo博客 | stack主题修改第一站](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[   ](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[（](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[修改样式](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[）](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)
 
@@ -516,6 +518,8 @@ alert-error
 [Hugo Stack 主题美化](https://weiqifun.com/posts/2024/10/hugo+stack主题美化/)[   ](https://weiqifun.com/posts/2024/10/hugo+stack主题美化/)[（](https://weiqifun.com/posts/2024/10/hugo+stack主题美化/)[文章统计字数](https://weiqifun.com/posts/2024/10/hugo+stack主题美化/)[）](https://weiqifun.com/posts/2024/10/hugo+stack主题美化/)
 
 [小白hugo博客装修笔记（1）](https://www.blain.top/p/renovation/)[（](https://www.blain.top/p/renovation/)[运行时长、文字统计](https://www.blain.top/p/renovation/)[）](https://www.blain.top/p/renovation/)
+
+[Hugo|在Stack主题上可行的短代码们](https://www.sleepymoon.cyou/2023/hugo-shortcodes/#键盘样式)
 
 [剑夜の个人空间](https://jianyesc.com/)
 

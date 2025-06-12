@@ -507,6 +507,8 @@ alert-error
 <blockquote class="alert-tip">
 
 
+[Hugo：阅读进度条 | Blog](https://huuuuuuo.github.io/post/hugo阅读进度条/)
+
 [Hugo：添加天气预报 | Blog](https://huuuuuuo.github.io/post/hugo添加天气预报/)   
 
 [Hugo博客 | stack主题修改第一站](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[   ](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[（](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[修改样式](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)[）](https://munlelee.github.io/post/hugo博客-stack主题修改第一站/#top)

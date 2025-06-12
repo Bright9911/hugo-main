@@ -1,28 +1,77 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" dir="{{ default `ltr` .Language.LanguageDirection }}">
-    <head>
-        {{- partial "head/head.html" . -}}
-        {{- block "head" . -}}{{ end }}
-    </head>
-    <body class="{{ block `body-class` . }}{{ end }}">
-        {{- partial "head/colorScheme" . -}}
 
-        {{/* The container is wider when there's any activated widget */}}
-        {{- $hasWidget := false -}}
-        {{- range .Site.Params.widgets -}}
-            {{- if gt (len .) 0 -}}
-                {{- $hasWidget = true -}}
-            {{- end -}}
+<head>
+    {{- partial "head/head.html" . -}}
+    {{- block "head" . -}}{{ end }}
+</head>
+<style>
+    #content_progress {
+        /* Positioning */
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 3px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        background-color: transparent;
+        color: #0085a1;
+    }
+
+    #content_progress::-webkit-progress-bar {
+        background-color: transparent;
+    }
+
+    #content_progress::-webkit-progress-value {
+        background-color: #0085a1;
+    }
+
+    #content_progress::-moz-progress-bar {
+        background-color: #0085a1;
+    }
+</style>
+
+
+<body class="{{ block `body-class` . }}{{ end }}">
+    {{- partial "head/colorScheme" . -}}
+
+    {{/* The container is wider when there's any activated widget */}}
+    {{- $hasWidget := false -}}
+    {{- range .Site.Params.widgets -}}
+    {{- if gt (len .) 0 -}}
+    {{- $hasWidget = true -}}
+    {{- end -}}
+    {{- end -}}
+    <div class="container main-container flex on-phone--column {{ if $hasWidget }}extended{{ else }}compact{{ end }}">
+        {{- block "left-sidebar" . -}}
+        {{ partial "sidebar/left.html" . }}
         {{- end -}}
-        <div class="container main-container flex on-phone--column {{ if $hasWidget }}extended{{ else }}compact{{ end }}">
-            {{- block "left-sidebar" . -}}
-                {{ partial "sidebar/left.html" . }}
-            {{- end -}}
-            {{- block "right-sidebar" . -}}{{ end }}
-            <main class="main full-width">
-                {{- block "main" . }}{{- end }}
-            </main>
-        </div>
-        {{ partial "footer/include.html" . }}
-    </body>
+        {{- block "right-sidebar" . -}}{{ end }}
+<progress id="content_progress" value="0"></progress>
+        <main class="main full-width">
+            {{- block "main" . }}{{- end }}
+        </main>
+    </div>
+    {{ partial "footer/include.html" . }}
+    
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var winHeight = window.innerHeight,
+            docHeight = document.documentElement.scrollHeight,
+            progressBar = document.querySelector('#content_progress');
+        progressBar.max = docHeight - winHeight;
+        progressBar.value = window.scrollY;
+
+        document.addEventListener('scroll', function () {
+            progressBar.max = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.value = window.scrollY;
+        });
+    });
+</script>
+
 </html>

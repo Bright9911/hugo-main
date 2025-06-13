@@ -11,8 +11,7 @@
 <span class="weatherReport" id="weatherReport"></span>
 
 <script>
-    const apicityUrl = 'https://restapi.amap.com/v3/ip?key=43b1a3e515fcd90eb7efe26feebb6436';
-    const apiUrlTemplate = 'https://restapi.amap.com/v3/weather/weatherInfo?city={adcode}&key=43b1a3e515fcd90eb7efe26feebb6436&extensions=all';
+    两个接口，分别是apicityUrl和apiUrlTemplate
 
     fetch(apicityUrl)
         .then(response => response.json())

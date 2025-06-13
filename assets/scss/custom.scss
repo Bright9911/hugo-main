@@ -303,3 +303,17 @@ html {
     }
 }
 
+
+/* 针对手机端的媒体查询 */
+@media (max-width: 768px) { 
+    header {
+        float: none;
+        margin-right: 0;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    .menu-social{
+        margin: 0 auto;
+    }
+}

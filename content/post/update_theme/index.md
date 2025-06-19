@@ -507,6 +507,8 @@ alert-error
 <blockquote class="alert-tip">
 
 
+https://thirdshire.com/hugo-stack-renovation    （主题样式修改，私信气泡）
+
 [Hugo：阅读进度条 | Blog](https://huuuuuuo.github.io/post/hugo阅读进度条/)
 
 [Hugo：添加天气预报 | Blog](https://huuuuuuo.github.io/post/hugo添加天气预报/)   

@@ -1,0 +1,77 @@
+<!-- <div class="progress">
+    <div class="progress-bar" id="todayProgress" role="progressbar" style="width: 0%;" aria-valuenow="0"
+        aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar" id="monthProgress" role="progressbar" style="width: 0%;" aria-valuenow="0"
+        aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar" id="yearProgress" role="progressbar" style="width: 0%;" aria-valuenow="0"
+        aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+
+<style>
+    .progress-bar {
+        float: left;
+        width: 0;
+        height: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+        text-align: center;
+        background-color: #0086a18b;
+        -webkit-box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+        box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+        -webkit-transition: width .6s ease;
+        -o-transition: width .6s ease;
+        transition: width .6s ease;
+
+    }
+
+    .progress {
+        height: 20px;
+        width: 240px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        background-color: #f8f8f883;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+        box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function updateProgress(progressId, newValue) {
+        $(`#${progressId}`).css('width', newValue + '%').attr('aria-valuenow', newValue).text(newValue + '%');
+    }
+    const now = new Date();
+
+    // 计算当天已过去的时间（毫秒）
+    const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const elapsedTime = now - startOfDay;
+
+    // 计算当天已过去的时间占一天总时间的百分比
+    const dayPercentage = Math.round((elapsedTime / (1000 * 60 * 60 * 24)) * 100);
+
+    // 计算当月已过去的天数
+    const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+    const elapsedDays = (now - startOfMonth) / (1000 * 60 * 60 * 24);
+    const daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+
+    // 计算当月已过去的天数占一个月总天数的百分比
+    const monthPercentage = Math.round((elapsedDays / daysInMonth) * 100);
+
+    // 计算当年已过去的天数
+    const startOfYear = new Date(now.getFullYear(), 0, 1);
+    const elapsedDaysInYear = (now - startOfYear) / (1000 * 60 * 60 * 24);
+    const daysInYear = (new Date(now.getFullYear() + 1, 0, 1) - new Date(now.getFullYear(), 0, 1)) / (1000 * 60 * 60 * 24);
+
+    // 计算当年已过去的天数占一年总天数的百分比
+    const yearPercentage = Math.round((elapsedDaysInYear / daysInYear) * 100);
+
+    updateProgress('todayProgress', dayPercentage);
+    updateProgress('monthProgress', monthPercentage);
+    updateProgress('yearProgress', yearPercentage);
+</script> -->

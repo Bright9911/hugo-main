@@ -20,7 +20,7 @@
         {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
         {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }} -->
 
-        {{ $articleCount := sub (len .Site.RegularPages) 4 }}
+        {{ $articleCount := len (where .Site.RegularPages "Section" "post") }}
         {{ $totalWordCount := 0 }}
         {{ range .Site.Pages }}
         {{ $totalWordCount = add $totalWordCount .WordCount }}
@@ -36,7 +36,7 @@
         </section>
 
         <p style="font-size: 13px;margin: 0px;">发布了 {{ $articleCount }} 篇文章 | 共 {{ $totalWordCountInKFloat }}K 字</p>
-
+ 
         <span id="busuanzi_container_site_pv" style='display:none;font-size: 13px;'> 本站总访问量 <span id="busuanzi_value_site_pv"></span> 次 </span> | 
         <span id="busuanzi_container_site_uv" style='display:none;font-size: 13px;'> 总访客数 <span id="busuanzi_value_site_uv"></span> 人</span>
 

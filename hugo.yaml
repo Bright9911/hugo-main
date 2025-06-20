@@ -21,6 +21,14 @@ languages:
         params:
             sidebar:
                 subtitle: 君子不器
+    
+    # en:
+    #     languageName: English
+    #     title: Bright9911
+    #     weight: 0
+    #     params:
+    #         sidebar:
+    #             subtitle: Rules are meant to be broken
 
 services:
     # Change it to your Disqus shortname before using

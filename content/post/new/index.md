@@ -92,6 +92,14 @@ image = "the-creative-exchange-d2zvqp3fpro-unsplash.jpg"
 
 ## 3、Github部署
 
+
+
+<blockquote class="alert-tip">
+
+   【[推荐机场](https://www.ermao.net/posts/vpn/)】
+
+</blockquote>
+
 ### 3.1、常规部署
 
 - （1）前往【[Github官网](https://github.com/)】，创建仓库 **{github用户名}.github.io**
@@ -116,6 +124,7 @@ git config --global http.sslVerify false
 git push -u origin main
 // 再开启
 git config --global http.sslVerify true
+// 如果git add . 之后想取消的，可以执行git reset
 
 // 修改之后再上传
 git add .

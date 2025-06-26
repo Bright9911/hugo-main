@@ -50,7 +50,8 @@ params:
     mainSections:
         - post
     featuredImageField: image
-    rssFullContent: true
+    # 值为false时RSS显示内容为缩略内容，值为true时RSS显示内容为全文内容
+    rssFullContent: false
     favicon: /favicon.ico
     # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
@@ -217,11 +218,23 @@ menu:
           params:
               icon: brand-bilibili
 
+        - identifier: youtub
+          name: Youtub
+          url: https://www.youtube.com/
+          params:
+              icon: brand-youtub
+
         - identifier: github
           name: GitHub
           url: https://github.com/Bright9911
           params:
               icon: brand-github
+
+        - identifier: RSS
+          name: RSS
+          url: /index.xml
+          params:
+              icon: brand-rss
 
 related:
     includeNewer: true
@@ -273,3 +286,12 @@ frontmatter:
 
 # 允许获取Git信息		
 enableGitInfo: true
+
+# 输出格式：HTML和RSS
+outputs:
+  home:
+    - html
+    - rss
+  section:
+    - html
+    - rss

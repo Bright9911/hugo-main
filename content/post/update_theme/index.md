@@ -507,6 +507,8 @@ alert-error
 <blockquote class="alert-tip">
 
 
+[Hugo图片点击放大](https://www.nan0in27.cn/p/hugo图片点击放大/)   （实现不了）
+
 https://thirdshire.com/hugo-stack-renovation    （主题样式修改，私信气泡）
 
 [Hugo：阅读进度条 | Blog](https://huuuuuuo.github.io/post/hugo阅读进度条/)

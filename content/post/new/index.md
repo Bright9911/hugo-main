@@ -18,17 +18,17 @@ image = "the-creative-exchange-d2zvqp3fpro-unsplash.jpg"
 - 前往[Git](https://git-scm.com/)官网，下载安装程序
 - 一直点下一步，默认安装即可
 
-<img src="1.png" alt="image-20250523164313875" style="zoom:80%;" />
+![alt text](1.png#style=width:80%)
 
 ### 1.2、Hugo下载
 
 - 前往[Tags · gohugoio/hugo](https://github.com/gohugoio/hugo/tags)下载对应版本
 
-<img src="2.png" alt="hugo版本" style="zoom:80%;" />
+![alt text](2.png#style=width:80%)
 
 - Windows版本：**hugo_extended_xxxxx_windows_amd64.zip**
 
-<img src="3.png" alt="hugo版本" style="zoom:80%;" />
+![alt text](3.png#style=width:80%)
 
 ## 2、搭建博客
 
@@ -49,12 +49,12 @@ image = "the-creative-exchange-d2zvqp3fpro-unsplash.jpg"
 - （1）前往【[Hugo Themes](https://themes.gohugo.io/)】，查找自己喜欢的主题，进行下载
 - （2）这边以【[Stack主题](https://github.com/CaiJimmy/hugo-theme-stack/tags)】为例，将下载好的主题解压，放到`/themes`文件夹中（这里我的网站名称是dev，从上一步创建博客的第2步中的xxx得来）
 
-<img src="7.png" alt="hugo版本" style="zoom:80%;" />
+![alt text](7.png#style=width:80%)
 
 - （3）将`exampleSite`样例数据中的 **Content** 和 **hugo.yaml** 复制到主文件夹中，并删掉`hugo.toml`和`content/post/rich-content`
 - （4）修改 **hugo.yaml** 中的 **theme**，将他修改为跟主题文件夹同名
 
-<img src="8.png" alt="hugo版本" style="zoom:80%;" />
+![alt text](8.png#style=width:80%)
 
 - （5）再次启动hugo服务，查看主题，具体主题配置修改 **hugo.yaml**，这里不细说，感兴趣可自行查找相关文章
 
@@ -123,23 +123,23 @@ git commit -m "修改描述"
 git push    // 如果是团队协作，需要先新建分支，再上传合并
 ```
 
-<img src="git.png" alt="hugo版本" style="zoom:100%;" />
+![alt text](git.png#style=width:80%)
 
 - （5）上传成功后访问 **https://{github用户名}.github.io**，成功搭建属于自己的Hugo博客
 
-<img src="4.png" alt="hugo版本" style="zoom:80%;" />
+![alt text](4.png#style=width:80%)
 
 ### 3.2、Github Action自动部署
 
 - （1）Github创建一个新的仓库，用于存放Hugo的主文件
 - （2）前往`Setttings -> Developer Settings -> Personal access tokens`，创建一个token(classic)
 
-<img src="5.png" alt="hugo版本" style="zoom:80%;" />
+![alt text](5.png#style=width:80%)
 
 - （3）token选择永不过期，并勾选 **repo** 和 **workflow** 选项
 - （4）为保证安全，将生成的token，保存的仓库的变量中，前往`Settings -> Secrets and variables -> Actions`中设置
 
-<img src="6.png" alt="hugo版本" style="zoom:80%;" />
+![alt text](6.png#style=width:80%)
 
 - （5）在hugo主文件创建一个`.github/workflows/hugo_deploy.yaml`文件，将以下内容复制进去，想具体了解更多，可查看【[Github Action文档](https://docs.github.com/zh/actions)】
 

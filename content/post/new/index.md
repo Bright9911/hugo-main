@@ -123,6 +123,8 @@ git commit -m "修改描述"
 git push    // 如果是团队协作，需要先新建分支，再上传合并
 ```
 
+<img src="git.png" alt="hugo版本" style="zoom:100%;" />
+
 - （5）上传成功后访问 **https://{github用户名}.github.io**，成功搭建属于自己的Hugo博客
 
 <img src="4.png" alt="hugo版本" style="zoom:80%;" />

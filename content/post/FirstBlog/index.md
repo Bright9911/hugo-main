@@ -1,10 +1,11 @@
 +++
-title = 'Redis的使用'
-date = 2025-05-23T08:23:18+08:00
+title = '【拓展】Redis的使用'
+date = 2025-05-28T18:23:18+08:00
 draft = true
 categories = [
     "redis",
     "笔记",
+    "拓展",
 ]
 image = "pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
 

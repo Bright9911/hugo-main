@@ -231,7 +231,6 @@ html {
 /*头像旋转动画*/
 .sidebar header .site-avatar .site-logo {
   transition: transform 1.65s ease-in-out; //旋转时间
-
 }
 
 .sidebar header .site-avatar .site-logo:hover {
@@ -376,4 +375,16 @@ html {
 [data-scheme="light"] .chroma {
   color: #ff6f00;
   background-color: #fff9f3cc;
+}
+
+/* 总宽度 1360 px，文章栏 768 px，侧边留空 */
+@media (min-width: 1536px) {
+    .main-container { max-width: 1360px !important; }
+    .main-grid {
+        grid-template-columns:
+            minmax(280px, 320px)
+            minmax(720px, 768px)
+            1fr !important;
+        gap: 40px !important;
+    }
 }

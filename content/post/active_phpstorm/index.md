@@ -60,6 +60,22 @@ windows系统，双击打开执行下  uninstall-all-users.vbs
 
 <img src="3.png" alt="hugo版本" style="zoom:80%;" />
 
+## 终极方案
+
+进入 IDEA/bin/phpstorm64.exe.vmoptions 下修改配置文件 ，添加下述三行（注意文件路径修改为自己的）并保存
+
+<img src="4.png" alt="hugo版本" style="zoom:80%;" />
+
+将C:/Program Files/JetBrains/jetbra“”修改为自己环境的ja-netfilter.jar文件所在绝对路径
+
+```
+-javaagent:C:/Program Files/JetBrains/jetbra/ja-netfilter.jar=jetbrains
+--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
+```
+
+
+
 <blockquote class="alert-note">   
 
 【[终极方案](https://ziby0nwxdov.feishu.cn/wiki/OyLBwBd9oiVFTykXrHvcEB91nyb)】

@@ -150,7 +150,7 @@ public function checkToken($token)
     // 每隔 5 秒检查一次 Token 是否绑定成功
     setInterval(function() {
         var token = "{{ session('scan_login_token') }}";
-        fetch("{{ url('http://10.11.201.116:8000/auth/check') }}/" + token)
+        fetch("{{ url('http://[本地IP]:8000/auth/check') }}/" + token)
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
@@ -180,7 +180,7 @@ public function checkToken($token)
 ### 在.env中
 
 ```php
-APP_URL=http://10.11.201.116:8000
+APP_URL=http://[本地IP]:8000
 ```
 
 ### 启动项目
@@ -189,6 +189,6 @@ APP_URL=http://10.11.201.116:8000
 php artisan serve --host 0.0.0.0 --port 8000
 
 // 在以下路径访问
-http://10.11.201.116:8000/login/qr
+http://[本地IP]:8000/login/qr
 ```
 

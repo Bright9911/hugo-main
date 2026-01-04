@@ -69,7 +69,7 @@ class SendArticlePublishedNotification implements ShouldQueue
         // 发送通知逻辑，例如发送邮件、短信等
         // 这里可以调用邮件服务、短信服务等
         // 我以邮件发送为例
-        $email = "15060257172@163.com";
+        $email = "[自己的邮箱]";
 
         // 发送纯文本邮件
         Mail::raw("文章“{$event->article->title}”发布成功！ -- 事件监听", function ($message) use ($email) {
@@ -167,7 +167,7 @@ class ProcessArticleNotification implements ShouldQueue
     public function handle()
     {
         // 处理通知逻辑，例如发送邮件、短信等
-        $email = "15060257172@163.com";
+        $email = "[自己的邮箱]";
 
         // 发送纯文本邮件
         Mail::raw("文章“{$this->article->title}”发布成功！ -- 队列", function ($message) use ($email) {
